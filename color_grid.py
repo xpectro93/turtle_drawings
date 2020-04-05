@@ -34,6 +34,9 @@ def draw_grid(STEP,LENGTH):
         turtle.setpos(-400, -LENGTH/2 + i)
 
 loadWindow.listen()
-draw_grid(25,800)
+
+hasDrawing = False
+loadWindow.onclick(lambda :draw_grid(25,800))
 while True:
+    
     loadWindow.update()
