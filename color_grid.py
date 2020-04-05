@@ -33,7 +33,7 @@ def draw_grid(STEP,LENGTH):
         #ending position
         turtle.setpos(-400, -LENGTH/2 + i)
 
-    
+loadWindow.listen()
 draw_grid(25,800)
 while True:
     loadWindow.update()
