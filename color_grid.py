@@ -10,7 +10,7 @@ turtle.colormode(255)
 turtle.pensize(3)
 
 def draw_grid(STEP,LENGTH):
-    for i in range(-500, LENGTH, STEP):
+    for i in range(-400, LENGTH, STEP):
         r = random.randint(0,255)
         g = random.randint(0,255)
         b = random.randint(0,255)
@@ -20,7 +20,7 @@ def draw_grid(STEP,LENGTH):
         #vertical lines 
         turtle.penup()
         #start position
-        turtle.setpos(-500, LENGTH/2)
+        turtle.setpos(-400, LENGTH/2)
         turtle.pendown()
         #ending position
         turtle.setpos(-LENGTH/2 + i, -LENGTH/2)
@@ -28,12 +28,12 @@ def draw_grid(STEP,LENGTH):
         #horizontal lines
         turtle.penup()
         #start position
-        turtle.setpos(LENGTH/2, -500)
+        turtle.setpos(LENGTH/2, -400)
         turtle.pendown()
         #ending position
-        turtle.setpos(-500, -LENGTH/2 + i)
+        turtle.setpos(-400, -LENGTH/2 + i)
 
     
-draw_grid(25,1000)
+draw_grid(25,800)
 while True:
     loadWindow.update()
