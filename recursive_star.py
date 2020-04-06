@@ -4,8 +4,6 @@ import math
 wn = turtle.Screen()
 wn.bgcolor('black')
 
-
-
 turtle.pensize(3)
 turtle.speed(0)
 turtle.colormode(255)
