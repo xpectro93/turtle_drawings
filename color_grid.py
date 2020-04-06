@@ -10,6 +10,7 @@ turtle.colormode(255)
 turtle.pensize(3)
 
 def draw_grid(STEP,LENGTH,COLOR):
+    circleStart = 0
     for i in range(-500, LENGTH, STEP):
         if COLOR:
 
@@ -35,6 +36,8 @@ def draw_grid(STEP,LENGTH,COLOR):
         turtle.pendown()
         #ending position
         turtle.setpos(-500, -LENGTH/2 + i)
+        turtle.goto(0,0)
+        turtle.circle(circleStart+i)
 
 x = 25
 y = 800
