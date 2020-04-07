@@ -30,3 +30,7 @@ pen.penup()
 pen.goto(0,-375)
 pen.pendown()
 pen.write("Made by: Don Jon", align='center', font=('Courier', 24, "normal") )
+
+
+while True:
+    wn.update()
